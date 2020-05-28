@@ -1,10 +1,10 @@
 <template>
-  <div class="hello">
+  <main class="register">
     <h1>Registrate</h1>
     <input v-model="email" type="email" id="correo">
     <input v-model="password" type="password" id="contraseña">
     <button @click="registro">Crear Cuenta</button>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -13,7 +13,7 @@ import 'firebase/auth';
 
 
 export default {
-  name: 'HelloWorld',
+  name: 'register',
   props: {
     msg: String,
   },
